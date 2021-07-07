@@ -12,6 +12,7 @@ app.use(cors());
 const commentsByPostId = {};
 
 app.post('/events', (req, res) => {
+    console.log('ReqBody');
     console.log(req.body);
     const event = req.body;
 
